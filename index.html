@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="display-temp" id="search">
+        <div class="py-5">
+            <div class="container">
+                <div class="search">
+                    <input type="text" id="search-bar" class="form-control w-50 m-auto mb-5 rounded-pill"
+                        placeholder="search city...">
+                </div>
+                <div class="row pt-5 mt-5">
+                    <div class="col-md-4">
+                        <div class="card border-secondary mb-3 shadow" style="height: 380px; ">
+                            <div class="card-header d-flex justify-content-between bg-dark text-white">
+                                <p id="today">Monday</p>
+                                <p id="today-date">3 May</p>
+                            </div>
+                            <div class="card-body">
+                                <h3 id="location"></h3>
+                                <div class="d-flex justify-content-between pt-5">
+                                    <div>
+                                        <h2 id="today-degree" class="d-inline-block"></h2>
+                                        <h2 style="font-family: Arial, Helvetica, sans-serif;" class="d-inline-block">
+                                            <sup>o</sup>C</h2>
+                                    </div>
+                                    <img id="today-icon" width="100">
+                                </div>
+                                <p id="today-descrption"></p>
+                                <div class="details pt-4">
+                                    <i class="fa-solid fa-umbrella pr-1"></i>
+                                    <span id="humidty"></span><span>%</span>
+
+                                    <i class="fa-solid fa-wind pr-1"></i>
+                                    <span id="wind"></span><span>km/h</span>
+
+                                    <i class="fa-solid fa-compass pr-1"></i>
+                                    <span id="compass"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-secondary mb-3 shadow" style="height: 380px;">
+                            <div class="card-header bg-dark text-white text-center">
+                                <div class="day-and-date">
+                                    <p class="next-day">Tuesday</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="temp-details text-center">
+                                    <div>
+                                        <img class="nextDay-icon" width="90" />
+                                    </div>
+                                    <h2 class="max-degree d-inline-block"></h2>
+                                    <h2 style="font-family: Arial, Helvetica, sans-serif;" class="d-inline-block">
+                                        <sup>o</sup>C</h2>
+                                    <br>
+                                    <p class="min-degree d-inline-block"></p>
+                                    <p style="font-family: Arial, Helvetica, sans-serif;" class="d-inline-block">
+                                        <sup>o</sup>C</p>
+                                    <p class="nextDay-descrption"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-secondary mb-3 shadow" style="height: 380px;">
+                            <div class="card-header bg-dark text-white text-center">
+                                <div class="day-and-date">
+                                    <p class="next-day">Wednsday</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="temp-details text-center">
+                                    <div>
+                                        <img class="nextDay-icon" width="90" />
+                                    </div>
+                                    <h2 class="max-degree d-inline-block"></h2>
+                                    <h2 style="font-family: Arial, Helvetica, sans-serif;" class="d-inline-block">
+                                        <sup>o</sup>C</h2>
+                                    <br>
+                                    <p class="min-degree d-inline-block"></p>
+                                    <p style="font-family: Arial, Helvetica, sans-serif;" class="d-inline-block">
+                                        <sup>o</sup>C</p>
+                                    <p class="nextDay-descrption"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
